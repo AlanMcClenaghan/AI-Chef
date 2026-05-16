@@ -15,6 +15,7 @@
         <lightning-combobox
             label="Dietary Restrictions"
             placeholder="Select restriction"
+            required
             name="dietaryRestrictions"
              value={formData.dietaryRestrictions}
              options={dietaryOptions}
@@ -25,6 +26,7 @@
             label="Meal Type"
             placeholder="Select meal type"
             name="mealType"
+            required
             value={formData.mealType}
             options={mealTypeOptions}
             onchange={handleChange}>
@@ -34,6 +36,7 @@
             type="number" 
             label="Servings"
             name="servings"
+            required
             value={formData.servings}
             onchange={handleChange}>
         </lightning-input>
